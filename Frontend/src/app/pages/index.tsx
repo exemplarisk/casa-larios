@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <Header />
 
       <div>
-        <div>Casa Larios</div>
+        <img src='' alt='' />
          
       </div>
     </div>
