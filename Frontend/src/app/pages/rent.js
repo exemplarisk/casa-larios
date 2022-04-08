@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Rentt() {
+function Rent() {
     return (
         <h1>Rent</h1>
     )
 }
 
-export default Rentt
+export default Rent

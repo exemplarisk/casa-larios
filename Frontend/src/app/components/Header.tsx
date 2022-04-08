@@ -3,8 +3,6 @@ import { navLinks } from "../utils/data";
 
 function Header() {
 
-    const navigateToRoute = (route: string) => {
-    }
 
     return (
         <header className="flex justify-between p-5 max-w-7xl mx-auto">
@@ -14,20 +12,32 @@ function Header() {
                 </Link>
                 <div className="hidden md:inline-flex items-center space-x-5">
                     {navLinks.map((link, index) => {
-                        return link.name=="Rent" || link.name=="Images" || link.name=="Find" ? <></> : (
-                        <div className="hover:open:active:focus:">
+                        return link.name == "Rent" ?
+                        <div className="cursor-pointer text-white bg-green-600 px-4 py-1 rounded-full">
+                            <Link href={link.href}>
+                                <a key={index}>{link.name}</a>
+                            </Link>
+                        </div>
+                            : link.name=="Images" || link.name=="Find" ? <></> : (
+                        <div className="cursor-pointer">
                             <Link href={link.href}>
                                 <li key={index}>{link.name}</li>
                             </Link>
                         </div>)
                     })}
-                    <h3 className="text-white bg-green-600 px-4 py-1 rounded-full">Rent</h3>
                 </div>
             </div>
-
             <div className="flex items-center space-x-5 text-green-600">
-                <h3>Images</h3>
-                <h3 className="border px-4 py-1 rounded-full border-green-600">Find</h3>
+                {navLinks.map((link, index) => {
+                    return link.name == "Images" || link.name=="Find" ? (
+                        <div className={link.name == "Find" ? "cursor-pointer border px-4 py-1 rounded-full border-green-600" : "cursor-pointer"}>
+                            <Link href={link.href}>
+                                <a key={index}>{link.name}</a>
+                            </Link>
+                        </div>
+                    ) :
+                    <></>
+                })}
             </div>
         </header>
     )
