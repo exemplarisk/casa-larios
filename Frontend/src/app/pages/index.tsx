@@ -1,22 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import Header from '../components/Header'
 
 const Home: NextPage = () => {
   return (
     <div className="">
       <Head>
-        <title>Create Next App</title>
+        <title>Casa Larios</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Header />
-
-      <div>
-        <img src='' alt='' />
-         
-      </div>
     </div>
   )
 }

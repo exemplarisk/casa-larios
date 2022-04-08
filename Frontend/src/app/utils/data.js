@@ -13,10 +13,10 @@ export const navLinks = [
     },
     {
         name: "Images",
-        href: "images",
+        href: "/images",
     },
     {
         name: "Rent",
-        href: "rent",
+        href: "/rent",
     },
 ];
