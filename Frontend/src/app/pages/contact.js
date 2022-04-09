@@ -9,8 +9,8 @@ function Contact() {
             <div style={{ display: 'flex', flexDirection: "column", textAlign: "center" }}>
                 <h1 style={{ fontSize: "36px" }}>Contact</h1>
                 <div>
-                    <div style={{ backgroundColor: "" }}>
-                        <button type="button" class="text-white bg-gradient-to-r
+                    <div style={{ textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                        <button type="button" class=" absolute top-1/2 left-1/2 text-white bg-gradient-to-r
                             from-purple-500
                             via-purple-600
                             to-purple-700
