@@ -13,11 +13,11 @@ function Header() {
                 <div className="hidden md:inline-flex items-center space-x-5">
                     {navLinks.map((link, index) => {
                         return link.name == "Rent" ?
-                        <div className="cursor-pointer text-white bg-green-600 px-4 py-1 rounded-full">
-                            <Link href={link.href}>
-                                <a key={index}>{link.name}</a>
-                            </Link>
-                        </div>
+                        <Link href={link.href}>
+                            <div className="cursor-pointer text-white bg-green-600 px-4 py-1 rounded-full">
+                                <p key={index}>{link.name}</p>
+                            </div>
+                        </Link>
                             : link.name=="Images" || link.name=="Find" ? <></> : (
                         <div className="cursor-pointer">
                             <Link href={link.href}>
