@@ -16,7 +16,7 @@ export const navLinks = [
         href: "/images",
     },
     {
-        name: "Rent",
-        href: "/rent",
+        name: "Book",
+        href: "/book",
     },
 ];
