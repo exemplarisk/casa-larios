@@ -17,7 +17,7 @@ function SpecModal() {
                   <div className="px-6 xl:px-0">
                       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pb-6 gap-8">
                           <div role="cell" className="bg-gray-100">
-                              <div className="bg-white p-5 rounded-md relative h-full w-full">
+                              <div className="bg-white p-5 rounded-md h-full w-full">
                                   <span><img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/27R6nk5/home-1.png" alt="home-1" /></span>
                                   <h1 className="pb-4 text-2xl font-semibold">Apartment Overview</h1>
                                   <div className="my-5">
@@ -55,7 +55,7 @@ function SpecModal() {
                               </div>
                           </div>
                           <div role="cell" className="bg-gray-100">
-                              <div className="bg-white p-5 rounded-md relative h-full w-full">
+                              <div className="bg-white p-5 rounded-md h-full w-full">
                                   <span><img className="bg-gray-200 p-2 mb-5 rounded-full h-30 w-30 viewBox=0 0 24 24" width="36" height="36" src="https://img.icons8.com/ios-glyphs/344/globe--v1.png" alt="pricetags-1" /></span>
                                   <h1 className="pb-4 text-2xl font-semibold">Location</h1>
                                   <div className="my-5">
@@ -103,7 +103,7 @@ function SpecModal() {
                               </div>
                           </div>
                           <div role="cell" className="bg-gray-100">
-                              <div className="bg-white p-5 rounded-md relative h-full w-full">
+                              <div className="bg-white p-5 rounded-md h-full w-full">
                                   <span><img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/GT4KHvJ/card-1.png" alt="home-1" /></span>
                                   <h1 className="pb-4 text-2xl font-semibold">Cost</h1>
                                   <div className="my-5">
@@ -143,7 +143,7 @@ function SpecModal() {
                               </div>
                           </div>
                           <div role="cell" className="bg-gray-100">
-                              <div className="bg-white p-5 rounded-md h-full relative w-full">
+                              <div className="bg-white p-5 rounded-md h-full w-full">
                                   <span><img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/rG4r6NJ/notifications-1.png" alt="home-1" /></span>
                                   <h1 className="pb-4 text-2xl font-semibold">Pool Area</h1>
                                   <div className="my-5">
@@ -183,7 +183,7 @@ function SpecModal() {
                               </div>
                           </div>
                           <div role="cell" className="bg-gray-100">
-                              <div className="relative bg-white p-5 rounded-md h-full w-full">
+                              <div className="bg-white p-5 rounded-md h-full w-full">
                                   <span><img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/HFC1hqn/people-1.png" alt="home-1" /></span>
                                   <h1 className="pb-4 text-2xl font-semibold">Nearby Restaurants</h1>
                                   <div className="my-5">
@@ -223,7 +223,7 @@ function SpecModal() {
                               </div>
                           </div>
                           <div role="cell" className="bg-gray-100">
-                              <div className="relative bg-white p-5 rounded-md h-full w-full">
+                              <div className="bg-white p-5 rounded-md h-full w-full">
                                   <span><img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/QX80fYm/lock-closed-1.png" alt="home-1" /></span>
                                   <h1 className="pb-4 text-2xl font-semibold">Nearby Shopping</h1>
                                   <div className="my-5">
