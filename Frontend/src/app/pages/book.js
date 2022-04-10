@@ -1,13 +1,11 @@
 import React from 'react'
+import BookingModal from '../components/BookingModal'
 
 function Book() {
     return (
         <div>
             <div>
-                <h1>Book</h1>
-                <div>
-                    
-                </div>
+                <BookingModal/>
             </div>
         </div>
     )
