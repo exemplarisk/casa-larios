@@ -13,7 +13,7 @@ function NavLink({ to, children }: any) {
 function MobileNav({ open, setOpen }: any) {
     return (
 
-        <div className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
+        <div className={`absolute top-0 left-0 h-screen w-screen bg-slate-500 transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
             <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
                 <a className="text-xl font-semibold" href="/">
                     <Logo />
@@ -22,7 +22,7 @@ function MobileNav({ open, setOpen }: any) {
             <div className="flex flex-col ml-4 mb-2 mt-4">
                 {navLinks.map((link, index) => {
                     return <Link href={link.href} key={index}>
-                        <a className="text-xl font-medium my-4" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
+                        <a className="text-xl font-medium my-4 text-slate-50" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
                             {link.name}
                         </a>
                     </Link>
