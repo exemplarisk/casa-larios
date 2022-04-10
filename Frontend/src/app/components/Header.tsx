@@ -4,8 +4,8 @@ import Logo from "./Logo";
 import useCollapse from 'react-collapsed'
 import React, { useState } from "react";
 
-function Collapse({ isActive }) {
-    const [isExpanded, setExpanded] = React.useState(isActive);
+function Collapse({ /* isActive */ }) {
+/*     const [isExpanded, setExpanded] = React.useState(isActive);
     const { getToggleProps, getCollapseProps } = useCollapse({
         isExpanded
     });
@@ -13,8 +13,8 @@ function Collapse({ isActive }) {
     React.useEffect(() => {
         setExpanded(isActive);
     }, [isActive, setExpanded]);
-
-    return (
+ */
+/*     return (
         <>
             <button
                 {...getToggleProps({
@@ -31,7 +31,7 @@ function Collapse({ isActive }) {
             </div>
         </>
     );
-}
+ */}
 
 
 function Header() {
