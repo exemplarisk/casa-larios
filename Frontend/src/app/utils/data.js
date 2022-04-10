@@ -1,3 +1,4 @@
+import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/react/outline'
 export const navLinks = [
     {
         name: "About Us",
@@ -20,3 +21,30 @@ export const navLinks = [
         href: "/book",
     },
 ];
+
+export const features = [
+    {
+        name: '82 sqm apartment',
+        description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        icon: GlobeAltIcon,
+    },
+    {
+        name: 'Nice neighborhood',
+        description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        icon: ScaleIcon,
+    },
+    {
+        name: 'Animal Friendly',
+        description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        icon: LightningBoltIcon,
+    },
+    {
+        name: '7 beds',
+        description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        icon: AnnotationIcon,
+    },
+] 
