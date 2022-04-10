@@ -3,6 +3,7 @@ import Head from 'next/head'
 import swal from 'sweetalert'
 import { initStreetView } from '../components/helpers/initStreetView'
 import FrontInfo from '../components/FrontInfo'
+import ContactFooter from '../components/ContactFooter'
 
 const goToContact = () => {
   window.location.href = "/contact"
@@ -46,7 +47,11 @@ const Home: NextPage = () => {
         </div>
 
       </main>
+      <div style={{ marginTop: "21vh" }}>
+        <ContactFooter />
+      </div>
     </div>
+    
   )
 }
 
