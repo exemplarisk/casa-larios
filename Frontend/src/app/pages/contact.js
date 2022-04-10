@@ -3,7 +3,6 @@ import ContactForm from '../components/ContactForm'
 
 function Contact() {
 
-    const mailtoHref = "mailto:jonatan_schultz@hotmail.com";
 
     return (
         <div>

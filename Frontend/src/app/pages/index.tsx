@@ -15,8 +15,8 @@ const triggerSwal = () => {
       icon: 'info',
       closeOnClickOutside: true,
       buttons: {
-        Contact: true,
         Cancel: true,
+        Contact: true,
       },
     }).then((value) => {
       if (value === 'Contact') {
