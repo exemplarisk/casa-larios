@@ -1,76 +1,66 @@
 import Link from "next/link"
 import { navLinks } from "../utils/data";
 import Logo from "./Logo";
-import useCollapse from 'react-collapsed'
 import React, { useState } from "react";
 
-function Collapse({ /* isActive */ }) {
-/*     const [isExpanded, setExpanded] = React.useState(isActive);
-    const { getToggleProps, getCollapseProps } = useCollapse({
-        isExpanded
-    });
 
-    React.useEffect(() => {
-        setExpanded(isActive);
-    }, [isActive, setExpanded]);
- */
-/*     return (
-        <>
-            <button
-                {...getToggleProps({
-                    style: { display: "block" },
-                    onClick: () => setExpanded((x: any) => !x)
-                })}
-            >
-                {isActive ? "Collapse" : "Expand"}
-            </button>
-            <div {...getCollapseProps({ style: { backgroundColor: "lightblue" } })}>
-                <h2 style={{ margin: 0, padding: 10 }}>
-                    Start editing to see some magic happen!
-                </h2>
+function NavLink({ to, children }: any) {
+    return <a href={to} className={`mx-4`}>
+        {children}
+    </a>
+}
+
+function MobileNav({ open, setOpen }: any) {
+    return (
+        
+        <div className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
+            <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
+                <a className="text-xl font-semibold" href="/">   
+                    <Logo />
+                </a>
             </div>
-        </>
-    );
- */}
-
+            <div className="flex flex-col ml-4 mb-2 mt-4">
+                {navLinks.map((link, index) => {
+                    return <NavLink key={index}>
+                        <a className="text-xl font-medium my-4" href={link.href} onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
+                            {link.name}
+                        </a>
+                    </NavLink>
+                })}
+            </div>
+        </div>
+    )
+}
 
 function Header() {
 
-    const [isExpanded, setExpanded] = useState(false)
-    const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })
+    const [open, setOpen] = useState(false)
     return (
-        <header className="flex justify-between p-5 max-w-7xl mx-auto">
-            <div className=" cursor-pointer flex items-center space-x-5">
-                <Link href="/">
-                    <div>
-                        <Logo />
-                    </div>
-                </Link>
+        <nav className="flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center">
+            <MobileNav open={open} setOpen={setOpen} />
+            <div className="w-3/12 flex items-center">
+                <a className="text-2xl font-semibold" href="/">C-L</a>
             </div>
-            <button onClick={() => setExpanded((x) => !x)} id="triggerEl" type="button" className="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center">
-                <span className="sr-only">Open main menu</span>
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
-                <svg className="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-            </button>
-{/*             <Collapse isActive={isExpanded} />
- */}            <div className="hidden md:block w-full md:w-auto" id="targetEl">
-                <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+            <div className="w-9/12 flex justify-end items-center">
+
+                <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden" onClick={() => {
+                    setOpen(!open)
+                }}>
+                    {/* hamburger button */}
+                    <span className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-3.5" : ""}`} />
+                    <span className={`h-1 w-full bg-black rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
+                    <span className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-3.5" : ""}`} />
+                </div>
+
+                <div className="hidden md:flex">
                     {navLinks.map((link, index) => {
-                        return <div key={index}>
-                            <Link href={link.href}>
-                                <a className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page" key={index}>{link.name}</a>
-                            </Link>
-                        </div>
+                        return <NavLink key={index} to={link.href}>{link.name}</NavLink>
                     })}
-                </ul>
+                </div>
             </div>
-            <div {...getCollapseProps({ style: { backgroundColor: "lightblue" } })}>
-                <h2 style={{ margin: 0, padding: 10 }}>
-                    Start editing to see some magic happen!
-                </h2>
-            </div>
-        </header>
+        </nav>
     )
 }
+
 
 export default Header
