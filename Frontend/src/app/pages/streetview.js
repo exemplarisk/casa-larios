@@ -3,7 +3,7 @@ import { initStreetView } from '../components/helpers/initStreetView'
 
 function Streetview() {
   return (
-      <div>
+      <div style={{ marginBottom: "2vh" }}>
           <div style={{ marginTop: "2vh", textAlign: "center" }}>
               <h1 className='text-6xl font-normal leading-normal text-pink-800'>Take a look around the corner</h1>
           </div>
