@@ -2,6 +2,7 @@ import Link from "next/link"
 import { navLinks } from "../utils/data";
 import Logo from "./Logo";
 import React, { useState } from "react";
+import ContactFooter from './ContactFooter'
 
 
 function NavLink({ to, children }: any) {
@@ -19,15 +20,16 @@ function MobileNav({ open, setOpen }: any) {
                     <Logo />
                 </a>
             </div>
-            <div className="flex flex-col ml-4 mb-2 mt-4">
+            <div className="flex flex-col text-center">
                 {navLinks.map((link, index) => {
                     return <Link href={link.href} key={index}>
-                        <a className="text-xl font-medium my-4 text-slate-50" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
+                        <a className="p-4 text-3xl text-slate-50 border-b-2 border-gray-900" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
                             {link.name}
                         </a>
                     </Link>
                 })}
             </div>
+            <ContactFooter />
         </div>
     )
 }
