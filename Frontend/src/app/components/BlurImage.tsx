@@ -20,7 +20,7 @@ function BlurImage({ image }: { image: ImageProps }) {
 
     return (
         <a href={image.href} className="group">
-            <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+            <div className="-z-50 w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
                 <Image
                     alt="/images/apartment/terrace.jpg"
                     src={image.imageSrc}
