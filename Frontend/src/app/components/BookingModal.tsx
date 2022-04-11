@@ -7,7 +7,7 @@ function BookingModal() {
               <div className="wrapper bg-white rounded shadow w-full ">
                   <div className="header flex justify-between border-b p-2">
                       <span className="text-lg font-bold">
-                          2020 July
+                          2022 April
                       </span>
                       <div className="buttons">
                           <button className="p-1">
@@ -71,20 +71,17 @@ function BookingModal() {
                                               className="event bg-purple-400 text-white rounded p-1 text-sm mb-1"
                                           >
                                               <span className="event-name">
-                                                  Meeting
+                                                  BOOKED
                                               </span>
                                               <span className="time">
-                                                  12:00~14:00
                                               </span>
                                           </div>
                                           <div
                                               className="event bg-purple-400 text-white rounded p-1 text-sm mb-1"
                                           >
                                               <span className="event-name">
-                                                  Meeting
                                               </span>
                                               <span className="time">
-                                                  18:00~20:00
                                               </span>
                                           </div>
                                       </div>
@@ -95,7 +92,25 @@ function BookingModal() {
                                       <div className="top h-5 w-full">
                                           <span className="text-gray-500">2</span>
                                       </div>
-                                      <div className="bottom flex-grow h-30 py-1 w-full cursor-pointer"></div>
+                                      <div className="bottom flex-grow h-30 py-1 w-full cursor-pointer">
+                                          <div
+                                              className="event bg-purple-400 text-white rounded p-1 text-sm mb-1"
+                                          >
+                                              <span className="event-name">
+                                                  BOOKED
+                                              </span>
+                                              <span className="time">
+                                              </span>
+                                          </div>
+                                          <div
+                                              className="event bg-purple-400 text-white rounded p-1 text-sm mb-1"
+                                          >
+                                              <span className="event-name">
+                                              </span>
+                                              <span className="time">
+                                              </span>
+                                          </div>
+                                      </div>                                      <div className="bottom flex-grow h-30 py-1 w-full cursor-pointer"></div>
                                   </div>
                               </td>
                               <td className="border p-1 h-40 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 overflow-auto transition cursor-pointer duration-500 ease hover:bg-gray-300">
@@ -132,10 +147,9 @@ function BookingModal() {
                                               className="event bg-blue-400 text-white rounded p-1 text-sm mb-1"
                                           >
                                               <span className="event-name">
-                                                  Shopping
+                                                  BOOKED
                                               </span>
                                               <span className="time">
-                                                  12:00~14:00
                                               </span>
                                           </div>
                                       </div>
