@@ -68,7 +68,7 @@ function ContactFooter() {
                                     d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
                                 </path>
                             </svg>
-                            New York, NY 10012, US
+                            C. Guapiles 7, 03189, Orihuela, Alicante, Spain
                         </p>
                         <p className="flex items-center justify-center md:justify-start mb-4">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
@@ -89,16 +89,6 @@ function ContactFooter() {
                                 </path>
                             </svg>
                             +4612345672
-                        </p>
-                        <p className="flex items-center justify-center md:justify-start">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="print"
-                                className="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                    d="M448 192V77.25c0-8.49-3.37-16.62-9.37-22.63L393.37 9.37c-6-6-14.14-9.37-22.63-9.37H96C78.33 0 64 14.33 64 32v160c-35.35 0-64 28.65-64 64v112c0 8.84 7.16 16 16 16h48v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h48c8.84 0 16-7.16 16-16V256c0-35.35-28.65-64-64-64zm-64 256H128v-96h256v96zm0-224H128V64h192v48c0 8.84 7.16 16 16 16h48v96zm48 72c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z">
-                                </path>
-                            </svg>
-                            + 01 234 567 89
                         </p>
                     </div>
                 </div>
