@@ -25,7 +25,7 @@ function SpecModal() {
                                             <svg xmlns="http://www.w3.org/2000/svg" width="12.5" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                                             </svg>
-                                            <h4 >82 Sqm, 2 Bedrooms, 7 beds, 2 Bathrooms, kitchen, large terrasse</h4>
+                                            <h4 >82 Sqm, 2 Bedrooms, 6 beds, 2 Bathrooms, kitchen, large terrasse</h4>
                                         </div>
                                         <div className="flex items-center pb-4 dark:border-gray-700 w-full space-x-3">
                                             <div>

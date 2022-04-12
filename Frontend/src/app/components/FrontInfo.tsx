@@ -13,7 +13,7 @@ function FrontInfo() {
                       Torrevieja, Spain
                   </p>
                   <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                      2 Bedrooms, 7 beds, 2 Bathrooms, kitchen, living room, 82 sqm
+                      2 Bedrooms, 6 beds, 2 Bathrooms, kitchen, living room, 82 sqm
                   </p>
               </div>
 

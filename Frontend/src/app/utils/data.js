@@ -42,7 +42,7 @@ export const features = [
         icon: LightningBoltIcon,
     },
     {
-        name: '7 beds',
+        name: '6 beds',
         description:
             'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
         icon: AnnotationIcon,
