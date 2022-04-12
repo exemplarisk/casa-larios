@@ -2,7 +2,7 @@ import Link from "next/link"
 import { navLinks } from "../utils/data";
 import Logo from "./Logo";
 import React, { useState } from "react";
-import ContactFooter from './ContactFooter'
+import Footer from './Footer'
 
 
 function NavLink({ to, children }: any) {
@@ -29,7 +29,7 @@ function MobileNav({ open, setOpen }: any) {
                     </Link>
                 })}
             </div>
-            <ContactFooter />
+            <Footer />
         </div>
     )
 }

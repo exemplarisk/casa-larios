@@ -1,9 +1,9 @@
 import React from 'react'
 
-function ContactFooter() {
+function Footer() {
     return (
         <footer className="text-center lg:text-left bg-gray-100 text-gray-600">
-            <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
+            <div className="flex justify-center items-center p-6 border-b border-gray-300">
                 <div className="flex justify-center">
                     <a href="#!" className="mr-6 text-gray-600">
                         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
@@ -33,8 +33,8 @@ function ContactFooter() {
                     </a>
                 </div>
             </div>
-            <div className="mx-6 py-10 text-center md:text-left">
-                <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="mx-6 py-10 text-center">
+                <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                     <div className="">
                         <h6 className="
             uppercase
@@ -43,7 +43,6 @@ function ContactFooter() {
             flex
             items-center
             justify-center
-            md:justify-start
           ">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cubes"
                                 className="w-4 mr-3" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -58,10 +57,10 @@ function ContactFooter() {
                         <p>Lots of room, two bathrooms and 100/100 wifi</p>
                     </div>
                     <div className="">
-                        <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+                        <h6 className="uppercase font-semibold mb-4 flex justify-center">
                             Contact
                         </h6>
-                        <p className="flex items-center justify-center md:justify-start mb-4">
+                        <p className="flex items-center justify-center mb-4">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
                                 className="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                 <path fill="currentColor"
@@ -70,7 +69,7 @@ function ContactFooter() {
                             </svg>
                             C. Guapiles 7, 03189, Orihuela, Alicante, Spain
                         </p>
-                        <p className="flex items-center justify-center md:justify-start mb-4">
+                        <p className="flex items-center justify-center mb-4">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
                                 className="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512">
@@ -80,7 +79,7 @@ function ContactFooter() {
                             </svg>
                             exempel@mail.com
                         </p>
-                        <p className="flex items-center justify-center md:justify-start mb-4">
+                        <p className="flex items-center justify-center mb-4">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
                                 className="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512">
@@ -97,4 +96,4 @@ function ContactFooter() {
     )
 }
 
-export default ContactFooter
+export default Footer

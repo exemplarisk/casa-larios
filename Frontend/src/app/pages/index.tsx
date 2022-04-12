@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import swal from 'sweetalert'
 import FrontInfo from '../components/FrontInfo'
-import ContactFooter from '../components/ContactFooter'
+import Footer from '../components/Footer'
 import { goToPage } from '../components/helpers/goToPage'
 
 
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
 
       </main>
       <div style={{ marginTop: "7vh" }}>
-        <ContactFooter />
+        <Footer />
       </div>
     </div>
     
