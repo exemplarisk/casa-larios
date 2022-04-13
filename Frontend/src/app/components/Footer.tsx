@@ -33,7 +33,7 @@ function Footer() {
                     </a>
                 </div>
             </div>
-            <div className="mx-6 py-10 text-center">
+            <div className="mx-6 text-center">
                 <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                     <div className="">
                         <h6 className="

@@ -2,7 +2,7 @@ import React from 'react'
 
 function BookingModal() {
   return (
-      <body className="bg-gray-200">
+      <body>
           <div className="container mx-auto mt-10">
               <div className="wrapper bg-white rounded shadow w-full ">
                   <div className="header flex justify-between border-b p-2">

@@ -7,8 +7,12 @@ function Contact() {
 
     return (
         <div>
-            <ContactForm />
-            <Footer />
+            <div>
+                <ContactForm />
+            </div>
+            <div style={{ marginTop: "20rem" }}>
+                <Footer />
+            </div>
         </div>
     )
 }
