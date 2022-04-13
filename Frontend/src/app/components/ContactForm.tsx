@@ -1,17 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
+import axios from 'axios'
+import swal from 'sweetalert'
+import emailjs from 'emailjs-com'
 
 function ContactForm() {
 
-    const getInputs = () => {
-        var name = (document.getElementById("name") as HTMLInputElement).value
-        var email = (document.getElementById("email") as HTMLInputElement).value
-        var message = (document.getElementById("message") as HTMLInputElement).value
-        console.log(name, email, message)
+    const triggerSwal = () => {
+        return (
+            swal({
+                text: 'Email Sent!',
+                icon: 'success',
+                closeOnClickOutside: true,
+            })
+        )
+    }
+
+
+    const sendMail = (e: any) => {
+            e.preventDefault()
+            emailjs.sendForm('service_izlg2bj', 'template_7jdfsem', e.target, 'lSmoQpjwwaAGjB7Fi')
+            .then((result) => {
+                triggerSwal()
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset()
     }
 
     return (
-        <body className="bg-gray-200">
-            <div className="text-center w-full">
+        <div>
+            <div className="text-center w-full bg-gray-200">
                 <svg className="text-gray-100 h-8 mx-auto" viewBox="0 0 150 29" version="1.1"
                     xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 </svg>
@@ -22,7 +41,9 @@ function ContactForm() {
                     <div>
                         <h2 className="text-4xl lg:text-5xl font-bold leading-tight">ASK US ANYTHING!</h2>
                         <div className="text-gray-700 mt-8">
-                            We are happy to answer as soon as we can
+                            Fill in this form and we will response to given email as soon as we can
+                            <br />
+                            Want to send an email instead? <a style={{ color: "blue" }} href="mailto:jonatan_schultz@hotmail.com?subject=I have a question">Email</a>
                         </div>
                     </div>
                     <div className="mt-8 text-center">
@@ -523,21 +544,21 @@ function ContactForm() {
                         </svg>
                     </div>
                 </div>
-                <div className="">
+                <form onSubmit={sendMail}>
                     <div>
                         <span className="uppercase text-sm text-gray-600 font-bold">Full Name</span>
                         <input id="name"
                             className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="Full Name" />
+                            type="text" name="name" placeholder="Full Name" />
                     </div>
                     <div className="mt-8">
                         <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
-                        <input id="email" className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="Email" />
+                        <input id="email" name="email" className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                            type="email" placeholder="Email" required />
                     </div>
                     <div className="mt-8">
                         <span className="uppercase text-sm text-gray-600 font-bold">Message</span>
-                        <textarea id="message"
+                        <textarea name="message" id="message"
                             className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" placeholder="Message">
                         </textarea>
                     </div>
@@ -545,14 +566,13 @@ function ContactForm() {
                         <button
                             type="submit"
                             className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
-                            <a onClick={getInputs} href="mailto:jonatan_schultz@hotmail.com?subject=HAPPY TYPING!" className="btn btn-danger">
-                                SEND EMAIL
-                            </a>
+                            SEND EMAIL
                         </button>
                     </div>
-                </div>
+                </form>
             </div>
-        </body>
+
+        </div>
     )
 }
 
