@@ -1,5 +1,4 @@
 # casa-larios
 # Next.JS, React, TypeScript, Tailwind CSS
 
-
-www.casa-larios.vercel.app
+casa-larios.vercel.app
