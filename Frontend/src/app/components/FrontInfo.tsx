@@ -7,7 +7,7 @@ function FrontInfo() {
       <div className="py-12 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="lg:text-center">
-                  <h1 className="text-gray-900 tracking-wide mt-2 text-3xl leading-8 font-semibold sm:text-4xl uppercase">Casa-Larios</h1>
+                  <h1 className="text-gray-900 tracking-wide mt-2 text-3xl leading-8 font-semibold sm:text-4xl uppercase">Casa Los Larios</h1>
                   <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-indigo-600 sm:text-4xl">
                       Torrevieja, Spain
                   </p>
