@@ -549,7 +549,7 @@ function ContactForm() {
                         <span className="uppercase text-sm text-gray-600 font-bold">Full Name</span>
                         <input id="name"
                             className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="text" name="name" placeholder="Full Name" />
+                            type="text" name="name" placeholder="Full Name" required />
                     </div>
                     <div className="mt-8">
                         <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
@@ -558,7 +558,7 @@ function ContactForm() {
                     </div>
                     <div className="mt-8">
                         <span className="uppercase text-sm text-gray-600 font-bold">Message</span>
-                        <textarea name="message" id="message"
+                        <textarea name="message" id="message" required
                             className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" placeholder="Message">
                         </textarea>
                     </div>
