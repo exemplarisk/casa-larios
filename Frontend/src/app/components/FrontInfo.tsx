@@ -1,23 +1,24 @@
 import React from 'react'
-import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/react/outline'
 import { features } from '../utils/data'
-
+import initStreetView from './helpers/initStreetView'
 
 function FrontInfo() {
   return (
       <div className="py-12 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="lg:text-center">
-                  <h2 className="text-base text-gray-900 font-semibold tracking-wide uppercase">Casa-Larios</h2>
+                  <h1 className="text-gray-900 tracking-wide mt-2 text-3xl leading-8 font-semibold sm:text-4xl uppercase">Casa-Larios</h1>
                   <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-indigo-600 sm:text-4xl">
                       Torrevieja, Spain
                   </p>
                   <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                      2 Bedrooms, 6 beds, 2 Bathrooms, kitchen, living room, 82 sqm
+                      Family apartment inside the city of Torrevieja, Spain.
                   </p>
               </div>
-
-              <div className="mt-10">
+              <div style={{marginTop: "-4rem"}}>
+                  {initStreetView("https://www.google.com/maps/embed?pb=!4v1649490963317!6m8!1m7!1s8QgD1Sf6Zpfa1BGDe2S18Q!2m2!1d37.94108383284717!2d-0.74053230303486!3f255.24098!4f0!5f0.7820865974627469")}
+              </div>
+              <div className=" mt-48">
                   <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
                       {features.map((feature) => (
                           <div key={feature.name}>
