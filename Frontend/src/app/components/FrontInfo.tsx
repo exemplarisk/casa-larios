@@ -12,7 +12,7 @@ function FrontInfo() {
                       Torrevieja, Spain
                   </p>
                   <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                      Family apartment inside the city of Torrevieja, Spain.
+                      Welcome
                   </p>
               </div>
               <div style={{marginTop: "-4rem"}}>

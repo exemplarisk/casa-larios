@@ -53,7 +53,7 @@ function Footer() {
                             </svg>
                             Casa Los Larios
                         </h6>
-                        <p>Family friendly, with a great view of the city</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eius distinctio ipsum ut aut cum maxime molestiae aperiam repellendus commodi.</p>
                         <p>Lots of room, two bathrooms and 100/100 wifi</p>
                     </div>
                     <div className="">
