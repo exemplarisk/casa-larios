@@ -4,7 +4,7 @@ import BookingModal from '../components/BookingModal'
 function Book() {
     return (
         <div>
-            <div>
+            <div style={{ marginBottom: "2vh" }}>
                 <BookingModal/>
             </div>
         </div>
