@@ -1,4 +1,4 @@
-export const initStreetView = (url: string) => {
+export const initMaps = (url: string) => {
     console.log(url)
     return (
         <div id="streetdiv">
@@ -14,4 +14,4 @@ export const initStreetView = (url: string) => {
         </div>
     )
 }
-export default initStreetView 
+export default initMaps
