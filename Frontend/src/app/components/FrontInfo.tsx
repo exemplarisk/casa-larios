@@ -15,9 +15,9 @@ function FrontInfo() {
                       Welcome
                   </p>
               </div>
-              <div style={{padding: "2rem", marginTop: "1rem", borderRadius: "25px"}}>
+{/*               <div style={{padding: "2rem", marginTop: "1rem", borderRadius: "25px"}}>
                   <Image style={{borderRadius: "25px"}} src="/images/garden/aparoutd.jpg" alt="" width="1236" height="1048"/>
-              </div>
+              </div> */}
               <div className=" mt-16">
                   <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
                       {features.map((feature) => (
