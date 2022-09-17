@@ -51,21 +51,27 @@ export const features = [
 
 export const aboutTitles = [
   {
+    id: 1,
     title: 'Apartment Overview',
   },
   {
+    id: 2,
     title: 'Location',
   },
   {
+    id: 3,
     title: 'Cost',
   },
   {
+    id: 4,
     title: 'Pool Area',
   },
   {
+    id: 5,
     title: 'Nearby Restaurants',
   },
   {
+    id: 6,
     title: 'Nearby Shopping',
   },
 ]

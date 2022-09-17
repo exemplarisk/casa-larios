@@ -20,10 +20,10 @@ function SpecModal() {
           </div>
           <div className="px-6 xl:px-0">
             <div className="grid gap-8 pb-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-              {aboutTitles.map((p, index) => {
+              {aboutTitles.map((p) => {
                 return (
-                  <div key={index} role="cell" className="bg-gray-100">
-                    <div className="h-full w-full rounded-md bg-white p-5">
+                  <div key={p.id} role="cell" className="bg-gray-100">
+                    <div className="h-full w-full rounded-xl bg-white p-5">
                       <span>
                         <img
                           className="mb-5 rounded-full bg-gray-200 p-2"
@@ -32,9 +32,9 @@ function SpecModal() {
                         />
                       </span>
                       <h1 className="pb-4 text-2xl font-semibold">{p.title}</h1>
-                      {aboutData.map((c, index) => {
+                      {aboutData.map((c) => {
                         return c.parent === p.title ? (
-                          <div key={index} className="my-5">
+                          <div key={c.id} className="my-5">
                             <div className="flex w-full items-center space-x-3 pb-4 dark:border-gray-700">
                               <BiCheck />
                               {c.href ? (
