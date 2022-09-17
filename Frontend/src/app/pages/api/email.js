@@ -7,8 +7,6 @@ export default function handler(req, res) {
     const { email } = req.body;
     const { name } = req.body;
     const { message } = req.body;
-    console.log(process.env)
-
     const client = new SMTPClient({
         user: process.env.mail,
         password: process.env.password,
