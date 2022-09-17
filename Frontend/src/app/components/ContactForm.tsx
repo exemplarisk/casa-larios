@@ -41,9 +41,9 @@ function ContactForm() {
                     <div>
                         <h2 className="text-4xl lg:text-5xl font-bold leading-tight">ASK US ANYTHING!</h2>
                         <div className="text-gray-700 mt-8">
-                            Fill in this form and we will response to given email as soon as we can
+                            Fill in this form and we will respond as soon as we can
                             <br />
-                            Want to send an email instead? <a style={{ color: "blue" }} href="mailto:jonatan_schultz@hotmail.com?subject=I have a question">Email</a>
+                            Want to send an email instead? <a style={{ color: "black", fontWeight: "bolder" }} href="mailto:jonatan_schultz@hotmail.com?subject=I have a question">Email</a>
                         </div>
                     </div>
                     <div className="mt-8 text-center">
