@@ -1,32 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import swal from 'sweetalert'
 import FrontInfo from '../components/FrontInfo'
 import Footer from '../components/Footer'
 import { goToPage } from '../components/helpers/goToPage'
-
-
-const triggerSwal = () => {
-  return (
-    swal({
-      text: 'Feel free to take a look around! If you have any questions regarding anything at all, please contact us!',
-      icon: 'info',
-      closeOnClickOutside: true,
-      buttons: {
-        Cancel: true,
-        Contact: true,
-      },
-    }).then((value) => {
-      switch (value) {
-        case 'Contact':
-          goToPage('/contact')
-          break
-        default:
-          break
-      }
-    })
-  )
-}
 
 const Home: NextPage = () => {
   return (
@@ -37,20 +13,24 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <div>
-            <FrontInfo />
-          <div style={{ textAlign: "center" }}>
-            <div style={{ marginTop:"8vh" }} id="swal">
-              <button type="button" onClick={triggerSwal} className="text-white bg-gradient-to-r from-indigo-400 via-indigo-500 to-indigo-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:focus:ring-indigo-800 shadow-lg shadow-indigo-500/50 dark:shadow-lg dark:shadow-indigo-800/80 font-medium rounded-lg text-6xl px-5 py-2.5 text-center mr-2 mb-2">WELCOME</button>
+          <FrontInfo />
+          <div style={{ textAlign: 'center' }}>
+            <div style={{ marginTop: '8vh' }} id="swal">
+              <button
+                className="book__btn button--moema button--text-thick button--text-upper button--size-s"
+                type="button"
+                onClick={() => goToPage('book')}
+              >
+                BOOK
+              </button>
             </div>
           </div>
         </div>
-
       </main>
-      <div style={{ marginTop: "7vh" }}>
+      <div style={{ marginTop: '7vh' }}>
         <Footer />
       </div>
     </div>
-    
   )
 }
 
