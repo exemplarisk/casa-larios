@@ -1,13 +1,17 @@
 import React from 'react'
+import { getDate } from './helpers/getDate';
 
 function BookingModal() {
+
+  const date = getDate();
+
   return (
       <body>
           <div className="container mx-auto mt-10">
               <div className="wrapper bg-white rounded shadow w-full ">
                   <div className="header flex justify-between border-b p-2">
                       <span className="text-lg font-bold">
-                          2022 April
+                         {date}
                       </span>
                       <div className="buttons">
                           <button className="p-1">

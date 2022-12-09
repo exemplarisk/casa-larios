@@ -23,30 +23,30 @@ export const navLinks = [
 ];
 
 export const features = [
-    {
-        name: '82 sqm apartment',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: GlobeAltIcon,
-    },
-    {
-        name: 'Nice neighborhood',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: ScaleIcon,
-    },
-    {
-        name: 'Animal Friendly',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: LightningBoltIcon,
-    },
-    {
-        name: '6 beds',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: AnnotationIcon,
-    },
+  {
+    name: '82 sqm apartment',
+    description:
+      'Comfortable home combining authentic restoration, spacious ambient interiors and modern conveniences',
+    icon: GlobeAltIcon,
+  },
+  {
+    name: 'In the center of the action',
+    description:
+      'Near the center of Orihuela Costa. With surrounding bars and restaurants.',
+    icon: ScaleIcon,
+  },
+  {
+    name: 'Pet Friendliness is our business!',
+    description:
+      'Here, pets of all kinds are welcome to stay!',
+    icon: LightningBoltIcon,
+  },
+  {
+    name: 'Outside Pool Area of over 200sqm',
+    description:
+      'Large pool with where depth ranges from 0.3 - 2.3 meters',
+    icon: AnnotationIcon,
+  },
 ]
 
 export const aboutTitles = [

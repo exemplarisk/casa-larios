@@ -34,7 +34,7 @@ function SpecModal() {
                       <h1 className="pb-4 text-2xl font-semibold">{p.title}</h1>
                       {aboutData.map((c) => {
                         return c.parent === p.title ? (
-                          <div key={c.id} className="my-5">
+                          <div key={c.description} className="my-5">
                             <div className="flex w-full items-center space-x-3 pb-4 dark:border-gray-700">
                               <BiCheck />
                               {c.href ? (
