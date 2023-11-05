@@ -141,7 +141,7 @@ export const aboutData = [
   {
     id: 13,
     description:
-      'What is the refund policy if I have to cancel during the month',
+      'Refund available up until 1 month before arrival date',
     parent: 'Cost',
   },
   {
